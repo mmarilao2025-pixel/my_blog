@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="desktop">
+        <div class="icon" onclick="toggleWindow('win-prog')">
+            <img src="https://win95recycler.neocities.org/icons/executable-4.png" alt="Prog">
+            <span>Programación</span>
+        </div>
+
+        <div class="icon" onclick="toggleWindow('win-anime')">
+            <img src="https://win95recycler.neocities.org/icons/mms_video-0.png" alt="Anime">
+            <span>Anime</span>
+        </div>
+
+        <div class="icon" onclick="toggleWindow('win-music')">
+            <img src="https://win95recycler.neocities.org/icons/mms_music-0.png" alt="Musica">
+            <span>Música & K-pop</span>
+        </div>
+
+        <div id="win-prog" class="window" style="display: none; top: 50px; left: 150px;">
+            <div class="window-header">
+                <div class="header-title">
+                    <img src="https://win95recycler.neocities.org/icons/executable-4.png" width="16"> 
+                    C:\Proyectos\Code.exe
+                </div>
+                <div class="header-controls">
+                    <button class="win-btn">_</button>
+                    <button class="win-btn">□</button>
+                    <button class="win-btn close" onclick="toggleWindow('win-prog')">X</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <h3>Hello World!</h3>
+                <p>Aquí escribiré sobre mis avances en CSS y HTML.</p>
+                <div class="code-box">
+                    <code>console.log("XP Mode ON");</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <button class="start-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Windows_XP_Logo.svg" width="20">
+            inicio
+        </button>
+        <div class="taskbar-divider"></div>
+        <div class="active-tasks">
+            <div class="task-item">Mi Blog</div>
+        </div>
+        <div class="system-tray">
+            <div id="clock"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
