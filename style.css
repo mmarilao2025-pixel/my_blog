@@ -1,0 +1,141 @@
+/* RESET Y FONDO */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Tahoma', 'Segoe UI', sans-serif;
+}
+
+.desktop {
+    background-image: url('descarga.jpg'); /* Tu imagen de los conejos */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: calc(100vh - 30px);
+    position: relative;
+    padding: 10px;
+}
+
+/* ICONOS */
+.icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    outline: 1px dotted white;
+}
+
+.icon img { width: 40px; margin-bottom: 5px; }
+
+/* VENTANA ESTILO LUNA (XP) */
+.window {
+    position: absolute;
+    min-width: 300px;
+    background: #ECE9D8;
+    border: 3px solid #0055E5;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.window-header {
+    background: linear-gradient(to bottom, #0058e6 0%, #3a91ff 10%, #0058e6 100%);
+    padding: 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 5px 5px 0 0;
+}
+
+.header-title { display: flex; align-items: center; gap: 5px; }
+
+.header-controls { display: flex; gap: 2px; }
+
+.win-btn {
+    width: 21px;
+    height: 21px;
+    background: #0055E5;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.win-btn.close { background: #E81123; }
+.win-btn:hover { filter: brightness(1.2); }
+
+.window-content {
+    background: white;
+    margin: 2px;
+    padding: 15px;
+    border: 1px solid #919B9C;
+    min-height: 150px;
+}
+
+/* BARRA DE TAREAS */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #1941a5 100%);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.start-btn {
+    background: linear-gradient(to bottom, #388e3c 0%, #4caf50 100%);
+    color: white;
+    border: none;
+    height: 100%;
+    padding: 0 15px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.start-btn:hover { filter: brightness(1.1); }
+
+.system-tray {
+    margin-left: auto;
+    background: #0997FF;
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-left: 1px solid #1941a5;
+}
+
+.code-box {
+    background: #222;
+    color: #0f0;
+    padding: 10px;
+    font-family: monospace;
+    border-radius: 3px;
+}
